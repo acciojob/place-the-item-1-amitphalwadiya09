@@ -1,2 +1,29 @@
 
 /* Your CSS Code here. */
+/* CSS for the holder class */
+.holder {
+  display: flex;
+  justify-content: space-between; /* Items are spaced with equal space between them */
+  align-items: center; /* Align items vertically in the center */
+  flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+}
+
+/* CSS for the item class */
+.item {
+  flex: 0 0 auto; /* Let items grow or shrink as needed, but don't allow them to shrink below their content */
+  margin: 10px; /* Add margin around the items for spacing */
+}
+
+/* Additional styling for illustration purposes */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Hide horizontal overflow for illustration */
+}
+
+/* Style for the overflow example */
+.overflow-example {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 10px;
+}
